@@ -1,0 +1,1 @@
+ALTER TABLE "monster" ADD "name" varchar(30);

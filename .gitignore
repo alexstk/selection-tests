@@ -1,0 +1,51 @@
+# Bytecode and class files
+*.class
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+.DS_Store
+.DS_Store?
+**/.DS_Store
+._.DS_Store
+
+# Maven specific
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Gradle specific
+.gradle/
+build/
+target/
+out/
+gradle-app.setting
+
+# IntelliJ IDEA specific
+.idea/
+*.iml
+*.ipr
+*.iws
+out/

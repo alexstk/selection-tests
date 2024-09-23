@@ -1,0 +1,65 @@
+Technologies
+This project is built using the Java ecosystem libraries; it is good you know the following items to have a good performance:
+Java
+Spring Boot
+Gradle
+Flyway
+Project Lombok
+JUnit
+Mockito
+
+
+The Coding Challenge
+The app is a battle of monsters, where we have different monsters with different stats like attack and defense, for example, and we can let them fight each other.
+We have implemented almost the entire CRUD for the Battle of Monsters app and have a battle endpoint to list all battles.
+Goals
+Implement missing functionalities: endpoints to list all monsters, start a battle, and delete a battle.
+Work on tests marked with TODO.
+Ensure the code style check script passes.
+
+
+Battle Algorithm
+For calculating the battle algorithm, take into account the flow below:
+The monster with the highest speed makes the first attack, if both speeds are equal, the monster with the higher attack goes first.
+For calculating the damage, subtract the defense from the attack (attack - defense); the difference is the damage; if the attack is equal to or lower than the defense, the damage is 1.
+Subtract the damage from the HP (HP = HP - damage).
+Monsters will battle in turns until one wins; all turns should be calculated in the same request; for that reason, the battle endpoint should return winner data in just one call.
+Who wins the battle is the monster who subtracted the enemy’s HP to zero
+
+
+Project Setup
+List of all the steps to follow to run the application
+Clone repository on your terminal
+{GITHUB-TOKEN}: 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 
+git clone https://{GITHUB-TOKEN}@github.com/fullstacklabs/assessment-cc-java-sr-01.git --branch v3.0.0
+​
+Please refrain from using a GUI tool to clone the provided link. Also, ensure not to remove the token from the URL as doing so will prompt git to request a password, and you will not have it.
+Create JAVA_HOME and install Gradle in the local environment
+./gradlew build
+​
+Run the app:
+./gradlew bootRun
+​
+Run the PMD:
+./gradlew pmdMain
+​
+Run the tests:
+./gradlew test
+
+
+Make the project build and run:
+
+1 configure gradlew by running in project folder
+	gradle wrapper  (requires gradle installed)
+	
+2. Fix the migration file V102__alter_monster_extended.sql
+ALTER TABLE "monster" ADD "name" varchar(30); 
+Delete DB file to run again.
+
+3. Fix pmd issues
+
+
+
+// Tools 
+Sonar -> coding standards
+PMD -> coding style
