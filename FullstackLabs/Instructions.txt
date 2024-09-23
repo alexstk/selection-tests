@@ -30,7 +30,7 @@ Who wins the battle is the monster who subtracted the enemy’s HP to zero
 Project Setup
 List of all the steps to follow to run the application
 Clone repository on your terminal
-{GITHUB-TOKEN}: ghp_(obligated space)pKNNDfJSKYDEG6CDn8iOTqDEOkYVfs1ybvyc 
+{GITHUB-TOKEN}: see keep 
 git clone https://{GITHUB-TOKEN}@github.com/fullstacklabs/assessment-cc-java-sr-01.git --branch v3.0.0
 ​
 Please refrain from using a GUI tool to clone the provided link. Also, ensure not to remove the token from the URL as doing so will prompt git to request a password, and you will not have it.
